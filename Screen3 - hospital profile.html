@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>Token Buddy - Hospital Details</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#6B21A8",
+            "background-light": "#F8F7FA",
+            "background-dark": "#130B1A",
+            "foreground-light": "#141117",
+            "foreground-dark": "#EAE8ED",
+            "subtle-light": "#756487",
+            "subtle-dark": "#A598B6",
+            "border-light": "#E5E2E8",
+            "border-dark": "#2A2033",
+            "card-light": "#FFFFFF",
+            "card-dark": "#1E1426"
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            'subtle': '0 4px 12px 0 rgba(0, 0, 0, 0.05)',
+          }
+        },
+      },
+      plugins: [
+        function({
+          addBase,
+          theme
+        }) {
+          addBase({
+            ':root': {
+              '--primary': theme('colors.primary'),
+              '--background': theme('colors.background-light'),
+              '--foreground': theme('colors.foreground-light'),
+              '--subtle': theme('colors.subtle-light'),
+              '--border': theme('colors.border-light'),
+              '--card': theme('colors.card-light'),
+            },
+            '.dark': {
+              '--background': theme('colors.background-dark'),
+              '--foreground': theme('colors.foreground-dark'),
+              '--subtle': theme('colors.subtle-dark'),
+              '--border': theme('colors.border-dark'),
+              '--card': theme('colors.card-dark'),
+            }
+          })
+        }
+      ]
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+<div class="flex flex-col min-h-screen">
+<header class="bg-card-light dark:bg-card-dark/50 backdrop-blur-sm sticky top-0 z-50 border-b border-border-light dark:border-border-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-2 rounded-lg text-white">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h1 class="text-xl font-bold text-foreground-light dark:text-foreground-dark">Token Buddy</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-bold text-primary dark:text-primary" href="#">Hospitals</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Doctors</a>
+<a class="text-sm font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">About Us</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="hidden sm:inline-flex items-center justify-center rounded-lg h-10 px-4 text-sm font-bold bg-primary/10 text-primary hover:bg-primary/20 transition-colors">Login</button>
+<button class="inline-flex items-center justify-center rounded-lg h-10 px-4 text-sm font-bold bg-primary text-white hover:opacity-90 transition-opacity">Sign Up</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+<div class="max-w-5xl mx-auto">
+<div class="mb-8">
+<h2 class="text-3xl md:text-4xl font-extrabold text-foreground-light dark:text-foreground-dark tracking-tight">City General Hospital</h2>
+<p class="mt-2 text-subtle-light dark:text-subtle-dark flex items-center gap-4 flex-wrap">
+<span><span class="material-symbols-outlined text-base align-middle mr-1">location_on</span>123 Medical Avenue, City Center</span>
+<span><span class="material-symbols-outlined text-base align-middle mr-1">call</span>(555) 123-4567</span>
+<span><span class="material-symbols-outlined text-base align-middle mr-1">language</span>www.citygeneral.com</span>
+</p>
+</div>
+<div class="relative rounded-xl overflow-hidden min-h-[300px] md:min-h-[400px] bg-cover bg-center mb-12 shadow-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAcqkUQq_Ci7gAVEjI2UR6oYcJOqi0cqMGAeDTWOEUJhaaaLt5dSqRoGYjPx9YzS3EHBUKVREKVcuYhW4_OmYIk9ZhWuQpG_gGwJUMITTxP_9hfnlckC5SMp3ekfuo6VNRcCLY_tmxcpiNP6Rcwq_1cz2oP1KYyq3rlitQCgWabVOmQVdgw40ROXTnERdSC8biV9_GgkZDutToIY5O3f7hbJj7FwQNQ4hHToQXQZkRVU9bTV_3byzD0r44CXdfhIHhEmi8XzXmx8w");'>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 md:p-8">
+<div class="flex items-center gap-2 bg-black/30 backdrop-blur-sm text-white py-2 px-4 rounded-full">
+<span class="material-symbols-outlined text-yellow-400 !text-2xl">star</span>
+<p class="text-2xl font-bold">4.5</p>
+</div>
+</div>
+</div>
+<section class="mb-12">
+<h3 class="text-2xl font-bold mb-6 text-foreground-light dark:text-foreground-dark">Available Doctors</h3>
+<div class="relative">
+<div class="flex overflow-x-auto pb-6 -mx-4 px-4 gap-6" style="scrollbar-width: none; -ms-overflow-style: none;">
+<style>
+                .scroll-container::-webkit-scrollbar { display: none; }
+              </style>
+<div class="flex-shrink-0 w-[240px] bg-card-light dark:bg-card-dark rounded-xl p-4 shadow-subtle flex flex-col gap-4 transition-transform hover:-translate-y-1">
+<img alt="Dr. Alex Turner" class="w-full h-40 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhACpb05eJXdaobHB-7FLKnQCGdgXYX3zXA0yq-8plmbyOZB7NaICsml3tCV4erl3V0ZXGrTZbYr23DnlpiPLuChRV8ck5usU6A-plbMdmuXDGCnN-aUXoyCfmdfWFqbx6YZJ5AKzYozrNgTZGKeaBSzRS9lw9lzmSJGGfrk_XHBDqz-2DGliuwbqCjQLf82xsLmL62By0WIO6cdH-fb2aSe82O5uN2QyRriK-tV_dvkErqwdui4VZvNoWksW-nM2MZbBHwe4zjg"/>
+<div class="flex-grow">
+<p class="font-bold text-foreground-light dark:text-foreground-dark">Dr. Alex Turner</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Cardiology</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark mt-1">Fee: $150</p>
+</div>
+<button class="w-full flex items-center justify-center rounded-lg h-10 px-4 text-sm font-bold bg-primary text-white hover:opacity-90 transition-opacity">Book Token</button>
+</div>
+<div class="flex-shrink-0 w-[240px] bg-card-light dark:bg-card-dark rounded-xl p-4 shadow-subtle flex flex-col gap-4 transition-transform hover:-translate-y-1">
+<img alt="Dr. Maya Sharma" class="w-full h-40 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlEPCch1Qrg_stOIL_q8dOs6zaHSNDzKFtPOA42NaJ10nGTDe1F_GiJQqJaVSuhGk9iirPg85b6cIbslyu3Qv9_r65WgDRS-Fg4lPBNlSJwf6w-TN05xng5uVjEUncAK3WLuKDpgXq1A50EuGT0VBL_A52GVWOkS_c4VAWgS8JCHhI-ghNLSlIi5VLDmZwMKqzblkzzi0BtQX8W1uJCa3CnrE4F4cHRjQYSJ0yU83LcNLdA7XkKJ5v09CK2srwp5g0FyPAoTCB8w"/>
+<div class="flex-grow">
+<p class="font-bold text-foreground-light dark:text-foreground-dark">Dr. Maya Sharma</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Pediatrics</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark mt-1">Fee: $120</p>
+</div>
+<button class="w-full flex items-center justify-center rounded-lg h-10 px-4 text-sm font-bold bg-primary text-white hover:opacity-90 transition-opacity">Book Token</button>
+</div>
+<div class="flex-shrink-0 w-[240px] bg-card-light dark:bg-card-dark rounded-xl p-4 shadow-subtle flex flex-col gap-4 transition-transform hover:-translate-y-1">
+<img alt="Dr. Ethan Clark" class="w-full h-40 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAifjMTIu8w6W_a4XGYhimJOFsp4ZTC79ZNhTfq3x2oaDujTa-T7uUQYt7Pq5ZdlRLExoTZA-1C9lxnQ8QtzmdB5P8PJ4Z_Y9YuWv64LyUz_JrfU6mH-k3mdGot7ZdHHpB8Ht3Y-n7lBBPHnYaVMGhiu0vSCFHtHZ4IqUvRyQIBWphxY2UyIUCTI89eR33vlJhw1-COdWPDC8HChHOSznjvs3pfPXMFPrMgkmXSAQvlI0_-07A5dRCsIMv_01F0cQ5KQ_UxbOqZ1w"/>
+<div class="flex-grow">
+<p class="font-bold text-foreground-light dark:text-foreground-dark">Dr. Ethan Clark</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Orthopedics</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark mt-1">Fee: $200</p>
+</div>
+<button class="w-full flex items-center justify-center rounded-lg h-10 px-4 text-sm font-bold bg-primary text-white hover:opacity-90 transition-opacity">Book Token</button>
+</div>
+<div class="flex-shrink-0 w-[240px] bg-card-light dark:bg-card-dark rounded-xl p-4 shadow-subtle flex flex-col gap-4 transition-transform hover:-translate-y-1">
+<img alt="Dr. Olivia Bennett" class="w-full h-40 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiKQgqTkSikcwC3WeU1cIFJiaGsm2kWPl8enkx93i0DjpbdJ3iCx3kLRaDZpdVgWPlTf5ZxwV7JWGxYXBBVmrFXZxGwmElMoPavGGIvsLJHeCAmiaBVU0i50RhlSmxYRKnNu2rtl-HtTG6FvrqTpk1XZpG94judp8CT-Cyzts3TznJm5xeR6BF_tOQ1Ra6rauR6DMCu_1oFI3abRIx_WtKxoyu2FXLfEg5B1bihI4ojRPk2-Ibbmt2BDuL5-K3qadLwon8W5NvQg"/>
+<div class="flex-grow">
+<p class="font-bold text-foreground-light dark:text-foreground-dark">Dr. Olivia Bennett</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Dermatology</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark mt-1">Fee: $180</p>
+</div>
+<button class="w-full flex items-center justify-center rounded-lg h-10 px-4 text-sm font-bold bg-primary text-white hover:opacity-90 transition-opacity">Book Token</button>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-12">
+<h3 class="text-2xl font-bold mb-6 text-foreground-light dark:text-foreground-dark">Ratings &amp; Reviews</h3>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-subtle flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12">
+<div class="flex flex-col items-center gap-2">
+<p class="text-5xl font-extrabold text-primary">4.5</p>
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star_half</span>
+</div>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Based on 234 reviews</p>
+</div>
+<div class="w-full flex-1">
+<div class="flex items-center gap-4 mb-2">
+<span class="text-sm text-subtle-light dark:text-subtle-dark">5</span>
+<div class="flex-grow bg-background-light dark:bg-background-dark h-2 rounded-full"><div class="bg-primary h-2 rounded-full" style="width: 40%;"></div></div>
+<span class="text-sm text-subtle-light dark:text-subtle-dark w-8 text-right">40%</span>
+</div>
+<div class="flex items-center gap-4 mb-2">
+<span class="text-sm text-subtle-light dark:text-subtle-dark">4</span>
+<div class="flex-grow bg-background-light dark:bg-background-dark h-2 rounded-full"><div class="bg-primary h-2 rounded-full" style="width: 30%;"></div></div>
+<span class="text-sm text-subtle-light dark:text-subtle-dark w-8 text-right">30%</span>
+</div>
+<div class="flex items-center gap-4 mb-2">
+<span class="text-sm text-subtle-light dark:text-subtle-dark">3</span>
+<div class="flex-grow bg-background-light dark:bg-background-dark h-2 rounded-full"><div class="bg-primary h-2 rounded-full" style="width: 15%;"></div></div>
+<span class="text-sm text-subtle-light dark:text-subtle-dark w-8 text-right">15%</span>
+</div>
+<div class="flex items-center gap-4 mb-2">
+<span class="text-sm text-subtle-light dark:text-subtle-dark">2</span>
+<div class="flex-grow bg-background-light dark:bg-background-dark h-2 rounded-full"><div class="bg-primary h-2 rounded-full" style="width: 10%;"></div></div>
+<span class="text-sm text-subtle-light dark:text-subtle-dark w-8 text-right">10%</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-sm text-subtle-light dark:text-subtle-dark">1</span>
+<div class="flex-grow bg-background-light dark:bg-background-dark h-2 rounded-full"><div class="bg-primary h-2 rounded-full" style="width: 5%;"></div></div>
+<span class="text-sm text-subtle-light dark:text-subtle-dark w-8 text-right">5%</span>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h3 class="text-2xl font-bold mb-6 text-foreground-light dark:text-foreground-dark">Promotional Packages</h3>
+<div class="bg-card-light dark:bg-card-dark rounded-xl shadow-subtle overflow-hidden flex flex-col md:flex-row">
+<div class="p-6 md:p-8 flex-1 md:w-3/5">
+<p class="text-sm font-bold text-primary mb-1">SPECIAL OFFER</p>
+<h4 class="text-xl font-bold text-foreground-light dark:text-foreground-dark mb-2">Comprehensive Health Checkup</h4>
+<p class="text-subtle-light dark:text-subtle-dark mb-4">Get a full body checkup at a discounted price. Includes blood tests, ECG, and consultation with our top specialists.</p>
+<button class="inline-flex items-center justify-center rounded-lg h-10 px-5 text-sm font-bold bg-primary/10 text-primary hover:bg-primary/20 transition-colors">View Details</button>
+</div>
+<div class="md:w-2/5 h-48 md:h-auto bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuApFxKSsp4daLo6XgYnUbVGcmkou93tdyqhs326E5tJbj3uluOP_KdMVOg7GA-OskV0vkzK8PNztuO97fCbqFpgwcVjxABsemxv3PFclqwhYcjZsMwuCyd5L9hyKKGuvyErkKDsjXS65WP-aTEtr4ZN9Ltk-6TdwzVK1R8dwB4R12RYvLlNWB_5uHheGE_8muNcqk54PF-rVMh9gDjwAzTDc0YUF9WoHzr60SI10C0fsP0gkVY1KprPf-Dp-J4dfXA4sxsHl8BnsA");'>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+
+</body></html>
