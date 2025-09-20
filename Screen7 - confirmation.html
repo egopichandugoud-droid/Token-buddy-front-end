@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Token Buddy - Booking Confirmation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#230c55",
+            "background-light": "#f6f6f8",
+            "background-dark": "#161121",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .confetti {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23ffffff;opacity:.2%7D%3C/style%3E%3C/defs%3E%3Ccircle class='cls-1' cx='63' cy='165' r='10'/%3E%3Ccircle class='cls-1' cx='452' cy='295' r='10'/%3E%3Ccircle class='cls-1' cx='272' cy='46' r='10'/%3E%3Ccircle class='cls-1' cx='156' cy='442' r='10'/%3E%3Ccircle class='cls-1' cx='357' cy='182' r='10'/%3E%3C/svg%3E");
+      animation: confetti-fall 15s linear infinite;
+    }
+    @keyframes confetti-fall {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(100%);
+      }
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative min-h-screen">
+<div class="confetti"></div>
+<header class="sticky top-0 z-20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-lg">
+<nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-2 rounded-full">
+<span class="material-symbols-outlined text-white">confirmation_number</span>
+</div>
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">Token Buddy</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary/80" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary/80" href="#">Book Token</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary/80" href="#">My Bookings</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary/80" href="#">Help</a>
+</div>
+<div class="flex items-center gap-4">
+<img alt="User Avatar" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBaPkWwI7rMX8B6_NxatgA-Hc1UFrDpiT3zC_qlZYWAjXqBPMYdmKq1ROS7xwaCmK-VShizwcPUJxwVuxCRsM2oG-vplMpr7S0QsHe42tyg95b-1jgWEFPzBhfqXcdxb5dqkXX3VThQGd4FBj0LZNELd9vUtrOIByp-AU7RI1d0Rf3jc9Sx5tR3-uaCCPaA4OowPpByo1qmKNkJECgqpsuseW7HNg1gZNhTKdekxZBKy-Zn97jHu3RKVeM4kuWXCWM94bQaSrJ_Q"/>
+</div>
+</nav>
+</header>
+<main class="container mx-auto px-6 py-12">
+<div class="text-center mb-12">
+<div class="inline-block bg-primary/20 dark:bg-primary/30 p-4 rounded-full animate-pulse mb-4">
+<div class="bg-primary p-5 rounded-full">
+<span class="material-symbols-outlined text-white !text-5xl">check_circle</span>
+</div>
+</div>
+<h2 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-2">Booking Confirmed!</h2>
+<p class="text-lg text-gray-600 dark:text-gray-400">Your token has been successfully booked. Thank you for using Token Buddy.</p>
+</div>
+<div class="max-w-4xl mx-auto bg-white dark:bg-[#1A0958] rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row relative">
+<div class="absolute top-0 left-1/2 -ml-3 w-6 h-6 bg-background-light dark:bg-background-dark rounded-full -translate-y-1/2"></div>
+<div class="absolute bottom-0 left-1/2 -ml-3 w-6 h-6 bg-background-light dark:bg-background-dark rounded-full translate-y-1/2"></div>
+<div class="p-8 md:w-2/3">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="text-2xl font-bold text-gray-900 dark:text-white">City General Hospital</h3>
+<p class="text-primary font-semibold">Cardiology Department</p>
+</div>
+<div class="text-center">
+<p class="text-sm text-gray-500 dark:text-gray-300">TOKEN</p>
+<p class="text-4xl font-bold text-primary">42</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-x-6 gap-y-4 text-sm mb-6">
+<div>
+<p class="text-gray-500 dark:text-gray-400">Doctor</p>
+<p class="font-semibold text-gray-800 dark:text-gray-100">Dr. Amelia Harper</p>
+</div>
+<div>
+<p class="text-gray-500 dark:text-gray-400">Date</p>
+<p class="font-semibold text-gray-800 dark:text-gray-100">March 15, 2024</p>
+</div>
+<div>
+<p class="text-gray-500 dark:text-gray-400">Time</p>
+<p class="font-semibold text-gray-800 dark:text-gray-100">10:00 AM - 11:00 AM</p>
+</div>
+<div>
+<p class="text-gray-500 dark:text-gray-400">Patient</p>
+<p class="font-semibold text-gray-800 dark:text-gray-100">John Doe</p>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
+<button class="flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-primary/10 dark:bg-white/10 hover:bg-primary/20 dark:hover:bg-white/20 text-primary dark:text-white text-sm font-semibold transition-colors">
+<span class="material-symbols-outlined">download</span>
+                    Download
+                </button>
+<button class="flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-primary/10 dark:bg-white/10 hover:bg-primary/20 dark:hover:bg-white/20 text-primary dark:text-white text-sm font-semibold transition-colors">
+<span class="material-symbols-outlined">share</span>
+                    Share
+                </button>
+<button class="flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-primary/10 dark:bg-white/10 hover:bg-primary/20 dark:hover:bg-white/20 text-primary dark:text-white text-sm font-semibold transition-colors">
+<span class="material-symbols-outlined">event</span>
+                    Calendar
+                </button>
+<button class="flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-primary/10 dark:bg-white/10 hover:bg-primary/20 dark:hover:bg-white/20 text-primary dark:text-white text-sm font-semibold transition-colors">
+<span class="material-symbols-outlined">monitoring</span>
+                    Track
+                </button>
+</div>
+</div>
+<div class="md:w-1/3 bg-primary/5 dark:bg-black/20 p-8 flex flex-col items-center justify-center border-l-2 border-dashed border-gray-300 dark:border-gray-500">
+<div class="bg-white p-2 rounded-lg mb-4">
+<img alt="QR Code for Token Verification" class="w-32 h-32" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo097dPSMY-gj4SNKKDXlEf4aI6xeaaAeIvOD-PmuRsDGTfLAVirx-lSDQ9WvaoCWj6xwD1VVwJdai-8Rl1aTtVXmLe-hzTTUHBWjsWAOPDVETB20hIPT_4xWjumY5QuTldAVX9WWUJhTJktPj2JAsdTJ7ANfA7lM61Caj7Aa8GbdnB1iHGQ66Nitp19ZVrcAsSMhHclR-xkf9eFdCGoS8ZUmFsbl7TC_g3OldLPgHAF6frJ79vvRIVJhcyY1uA3uHa7HfR8OY3w"/>
+</div>
+<p class="text-xs text-center text-gray-600 dark:text-gray-400">Scan this QR code at the hospital for quick verification.</p>
+</div>
+</div>
+<div class="max-w-4xl mx-auto mt-8 p-6 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-start gap-4">
+<span class="material-symbols-outlined text-primary dark:text-white mt-1">info</span>
+<div>
+<h4 class="font-bold text-gray-900 dark:text-white">Important Reminders</h4>
+<ul class="list-disc list-inside mt-2 text-sm text-gray-700 dark:text-gray-300 space-y-1">
+<li>Please arrive at least 30 minutes before your scheduled time.</li>
+<li>Bring a valid photo ID and any necessary medical documents.</li>
+<li>Masks are mandatory inside the hospital premises.</li>
+</ul>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 z-10 p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto flex justify-center">
+<button class="w-full max-w-md flex items-center justify-center gap-3 py-3 px-6 rounded-xl bg-primary text-white font-bold text-lg hover:bg-opacity-90 transition-all shadow-lg">
+<span class="material-symbols-outlined">dashboard</span>
+                Go to Dashboard
+            </button>
+</div>
+</footer>
+</div>
+
+</body></html>
