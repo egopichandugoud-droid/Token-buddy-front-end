@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Token Buddy - Review &amp; Confirmation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#230c55",
+              "background-light": "#f6f6f8",
+              "background-dark": "#161121",
+            },
+            fontFamily: {
+              display: ["Manrope"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+<header class="bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-10 border-b border-gray-200 dark:border-gray-800">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl"> local_hospital </span>
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">Token Buddy</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors">
+<span class="material-symbols-outlined"> help </span>
+<span class="text-sm font-medium hidden md:inline">Support</span>
+</button>
+<button class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors">
+<span class="material-symbols-outlined"> arrow_back </span>
+<span class="text-sm font-medium hidden md:inline">Back</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="max-w-4xl mx-auto">
+<div class="mb-8">
+<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Review &amp; Confirmation</h2>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg flex items-center gap-4 mb-8">
+<div class="bg-primary/20 dark:bg-primary/30 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary dark:text-white"> verified_user </span>
+</div>
+<div>
+<p class="font-bold text-gray-900 dark:text-white">Almost there!</p>
+<p class="text-sm text-gray-600 dark:text-gray-300">Please review your booking details below.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-8">
+<div class="bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-sm">
+<div class="flex items-start gap-4">
+<div class="w-24 h-24 rounded-lg bg-cover bg-center flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnSnB6Vyart3LJOnAJF5kwIk_GNAXurkrTkPfX-chxe2pAROVji2FJwZCy_3CClt61GMWEXWrhmhHZ4GAR6xisUENkn2CviBXhWaT4Y6YswyBCPJgKE3f_fH2k5ktwCeMbYqsJ_ghBGL9d8YpH9Pjt3n6UXdIjxnk4fRnf_hTYsM0SQkaJCEcd4SzwmijrbPInMUENO0oeeVeGm7EBotA_OkL0bSO2TkFyJ0mGaNMTW5vRyVSowO4xLlNe-EYxY6-2U9Sv02f-Zg");'></div>
+<div class="flex-grow">
+<p class="text-lg font-bold text-gray-900 dark:text-white">Dr. Amelia Harper</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Cardiologist</p>
+<p class="mt-2 text-md font-semibold text-gray-800 dark:text-gray-200">City General Hospital</p>
+<div class="mt-3 text-sm text-gray-600 dark:text-gray-400 space-y-1">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">calendar_today</span> 22nd July, 2024</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">schedule</span> 10:00 AM</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">hourglass_top</span> Est. wait time: 15 mins</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-sm">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Patient Details</h3>
+<button class="text-sm font-medium text-primary dark:text-primary/90 hover:underline">Change</button>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-cover bg-center flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCg4lycPZn_KEpZ77dw6hnVhtxhKUUTDbBjnD6NJhlKnwdVanYIsmP_TO1gRFNZsZbJchky6h-eoe-8Mgc1QrkORn-2SbUHWeeY-sbD-u8wwp5cCRUimkwPA3X1_s624aJmm0zICbowChxn5o2oUG9gTASfHRLBnR0-hWS3fYHa-YHFVMq-z_MHU4Ik0pMHpRD7JW36AI0jdJFC233diZ2GCRIPP5rYQoCdQu0vx4860_8JuxwUMBxYfZfayfWdxux7WDOemmoXQ");'></div>
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">Sophia Clark</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Age: 35</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-transparent border border-dashed border-primary/50 dark:border-primary/40 p-6 rounded-xl flex flex-col">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Bill Summary</h3>
+<div class="space-y-3 flex-grow">
+<div class="flex justify-between text-sm">
+<p class="text-gray-600 dark:text-gray-400">Consultation Fee</p>
+<p class="font-medium text-gray-800 dark:text-gray-200">$50.00</p>
+</div>
+<div class="flex justify-between text-sm">
+<p class="text-gray-600 dark:text-gray-400">Booking Fee</p>
+<p class="font-medium text-gray-800 dark:text-gray-200">$5.00</p>
+</div>
+<div class="flex justify-between text-sm">
+<p class="text-gray-600 dark:text-gray-400">Taxes &amp; Charges</p>
+<p class="font-medium text-gray-800 dark:text-gray-200">$2.50</p>
+</div>
+</div>
+<div class="border-t border-gray-200 dark:border-gray-700 my-4"></div>
+<div class="flex justify-between items-center font-bold text-lg">
+<p class="text-gray-900 dark:text-white">Total Amount</p>
+<p class="text-primary">$57.50</p>
+</div>
+<div class="mt-6 space-y-3 text-sm">
+<div class="flex items-center gap-3 bg-primary/10 dark:bg-primary/20 p-3 rounded-lg">
+<input checked="" class="h-4 w-4 text-primary focus:ring-primary border-primary/50" id="pay-online" name="payment-option" type="radio"/>
+<label class="flex-grow font-medium text-gray-800 dark:text-gray-200" for="pay-online">Pay Online</label>
+</div>
+<div class="flex items-center gap-3 bg-primary/10 dark:bg-primary/20 p-3 rounded-lg">
+<input class="h-4 w-4 text-primary focus:ring-primary border-primary/50" id="pay-hospital" name="payment-option" type="radio"/>
+<label class="flex-grow font-medium text-gray-800 dark:text-gray-200" for="pay-hospital">Pay at Hospital</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/90 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800 py-4">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="h-8 w-12 bg-contain bg-center bg-no-repeat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVe7oSl7KiSrg0dCwHx6xCwDsQtbPT8iQd9nFj3m8ybuwkTn7RZf8t3o8cwSg7qO-YvkkeSDbttZJSyE8Z7lGCFFbeRnG6OQs7iqiTeOuEtJCGmLjUClYr-WBdwrN9-BnBrhMEkp-01a48ailQVi0menOBqbzIXuiBwosFmVK80tDzgKcF7kndrHBd82d5vsOu2EzX99PJICuQfgpUv0PA-o7xmfWDCHioXh8onQCU_m-LzLWKp7CwAxA2smEfVuB8jFXXS43Adw");'></div>
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">Credit Card</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">**** **** **** 1234</p>
+</div>
+<button class="text-sm font-medium text-primary dark:text-primary/90 hover:underline ml-4">Change</button>
+</div>
+<div class="flex flex-col items-center sm:items-end w-full sm:w-auto">
+<button class="w-full sm:w-auto bg-primary text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/50 dark:focus:ring-offset-background-dark transition-all duration-300 transform hover:scale-105">
+                Confirm &amp; Get Token
+              </button>
+<p class="text-xs text-gray-500 dark:text-gray-400 mt-2">Your booking ID will be generated instantly.</p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
