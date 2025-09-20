@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Token Buddy - Discover</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#230c55",
+              "background-light": "#f6f6f8",
+              "background-dark": "#161121",
+            },
+            fontFamily: {
+              display: ["Manrope"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-black dark:text-white">
+<div class="relative min-h-screen w-full">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-white/10 dark:border-white/10 bg-background-light/80 dark:bg-background-dark/80 px-10 py-3 backdrop-blur-sm">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 text-primary">
+<svg fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+<path d="M2 17l10 5 10-5"></path>
+<path d="M2 12l10 5 10-5"></path>
+</svg>
+<h1 class="text-xl font-bold">Token Buddy</h1>
+</div>
+<div class="flex items-center gap-2 text-sm text-black/60 dark:text-white/60">
+<span class="material-symbols-outlined text-base"> location_on </span>
+<span>Mumbai, India</span>
+<span class="material-symbols-outlined text-base"> expand_more </span>
+</div>
+</div>
+<div class="flex flex-1 items-center justify-end gap-4">
+<label class="relative w-full max-w-sm">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-black/40 dark:text-white/40">
+              search
+            </span>
+<input class="form-input w-full rounded-lg border-none bg-black/5 dark:bg-white/5 py-2 pl-10 pr-4 text-sm text-black dark:text-white placeholder:text-black/40 dark:placeholder:text-white/40 focus:ring-2 focus:ring-primary" placeholder="Search doctors, hospitals..."/>
+</label>
+<button class="flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center rounded-lg bg-black/5 dark:bg-white/5">
+<span class="material-symbols-outlined text-black/60 dark:text-white/60">
+              tune
+            </span>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAWJ2gw64_rLSy6yepzzulcVgvKuNs_949EGAFZhUnlI6AzUte8O_oWII8YrTpye0kSMt5JNa0cPL-opz0JCSlImCkrgEk3zaMoprrqDJqO9N-7YjSoNtfkZuEGJXRmCI33pc-ojOKbD4EolinS0LkFE-_M5GP9g-c3-PwGtR_YKmphoBjcOQ_D8wY1VHFSaeQPOQbbybUG2vAJGDoW0jOqnMV9kB5MrfH5GTymNXFSPvKKLAONuedpLfGcU4tNnmca_MfgH81fA");'></div>
+</div>
+</header>
+<main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+<div class="mb-6 flex items-center justify-between">
+<h2 class="text-4xl font-extrabold text-black dark:text-white">
+            Discover Doctors &amp; Hospitals
+          </h2>
+</div>
+<div class="mb-6 flex items-center justify-between rounded-xl bg-primary/10 dark:bg-primary/20 p-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">campaign</span>
+<div>
+<h3 class="font-bold text-black dark:text-white">Special Offer!</h3>
+<p class="text-sm text-black/60 dark:text-white/60">Get 20% off on your first consultation booking.</p>
+</div>
+</div>
+<button class="bg-primary text-white font-bold py-2 px-4 rounded-lg text-sm shrink-0">Claim Offer</button>
+</div>
+<div class="mb-6">
+<div class="flex border-b border-black/10 dark:border-white/10">
+<a class="border-b-2 border-primary px-4 py-2 text-sm font-bold text-primary" href="#">
+              Doctors
+            </a>
+<a class="border-b-2 border-transparent px-4 py-2 text-sm font-medium text-black/60 dark:text-white/60 hover:text-primary" href="#">
+              Hospitals
+            </a>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+<div class="lg:col-span-2">
+<div class="mb-6 flex items-center justify-between">
+<h3 class="text-xl font-bold text-black dark:text-white">
+                742 Doctors available in Mumbai
+              </h3>
+<button class="flex items-center gap-2 text-sm font-medium text-black/60 dark:text-white/60">
+                 Sort By: Relevance
+                 <span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+</div>
+<div class="space-y-6">
+<div class="rounded-xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-4 transition-all hover:shadow-lg hover:border-primary/50 dark:hover:border-primary/50">
+<div class="flex items-start gap-4">
+<img alt="Dr. Emily Carter" class="h-24 w-24 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0KYy1pG5dgd1DwiZtbT6n3j_35PgusacNH5WOTfUCluW3rQWrRe-C_kVDNuha3q3ExXc-ikeSqYBQz3E8WyDqkJYofD8XgOh1qHcYfszE82Z6gUe4YVcrJgAZPompH0jwndDiXCVWLiNq0_xrTyFs7cSuA5J_qNBFvs63Z0WeT3ZmoE9Xcn5fP7am-Mha6VFLMu-f93dCxGV9Txywzu97Gm5xVo9s9e2m1T04867U1CXdg_Wpk7cltmd30QjPpCQzTrD4mSfMSA"/>
+<div class="flex-1">
+<h4 class="text-lg font-bold text-black dark:text-white">
+                      Dr. Emily Carter
+                    </h4>
+<p class="text-sm font-medium text-primary">Cardiologist</p>
+<p class="mt-1 text-xs text-black/60 dark:text-white/60">
+                      10 years experience
+                    </p>
+<div class="mt-2 flex items-center gap-1 text-sm text-black/80 dark:text-white/80">
+<span class="material-symbols-outlined text-yellow-500 !text-base" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="font-bold">4.8</span>
+<span class="text-xs text-black/60 dark:text-white/60">(1200+ reviews)</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<p class="text-xs text-black/60 dark:text-white/60">Next available at 4:30 PM</p>
+<button class="w-full bg-primary px-4 py-2 text-sm font-bold text-white rounded-lg">
+                      Book Token
+                    </button>
+<button class="w-full bg-primary/20 dark:bg-primary/30 px-4 py-2 text-sm font-bold text-primary rounded-lg">
+                      View Profile
+                    </button>
+</div>
+</div>
+</div>
+<div class="rounded-xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-4 transition-all hover:shadow-lg hover:border-primary/50 dark:hover:border-primary/50">
+<div class="flex items-start gap-4">
+<img alt="Dr. David Lee" class="h-24 w-24 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKz_2kdJvfu4kxbMjLmS3w0mKyj_obNXlxtTIHhMW6v4UA_ciz5Nzzfr1olVcW1b4ebZCfzFFSdL9nAV5Q8rpMQMKvKTJ-rPagpK6FS8s6bReyRSra6EvlGZDDlq1p8oh3eNWiud3QCnaeZEwSHgnPVXdVwNS3XI0QzMp2Xwk1Cgi75uCdgOsQXtolSeSPsUUdeGYbJ-5YMCEaBQhqlccdci4Zpl5z2-2QnhRnUM7sdNTjDdclAJuqwrY2oyu2qiLpTa-Rme2cvA"/>
+<div class="flex-1">
+<h4 class="text-lg font-bold text-black dark:text-white">
+                      Dr. David Lee
+                    </h4>
+<p class="text-sm font-medium text-primary">Neurologist</p>
+<p class="mt-1 text-xs text-black/60 dark:text-white/60">
+                      15 years experience
+                    </p>
+<div class="mt-2 flex items-center gap-1 text-sm text-black/80 dark:text-white/80">
+<span class="material-symbols-outlined text-yellow-500 !text-base" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="font-bold">4.9</span>
+<span class="text-xs text-black/60 dark:text-white/60">(1500+ reviews)</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<p class="text-xs text-black/60 dark:text-white/60">Next available at 6:00 PM</p>
+<button class="w-full bg-primary px-4 py-2 text-sm font-bold text-white rounded-lg">
+                      Book Token
+                    </button>
+<button class="w-full bg-primary/20 dark:bg-primary/30 px-4 py-2 text-sm font-bold text-primary rounded-lg">
+                      View Profile
+                    </button>
+</div>
+</div>
+</div>
+<div class="rounded-xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-4 transition-all hover:shadow-lg hover:border-primary/50 dark:hover:border-primary/50">
+<div class="flex items-start gap-4">
+<img alt="Dr. Sophia Clark" class="h-24 w-24 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChMeA5Zg31A8P2G9n7qZi94wFE4lTdMwfLT8S3e2ESWjnIZ16xEM6E-nfeEWiLBgiHmWiZi7-WCQ51vDRixau0-mjgCjcdC-88b-pDrr8Zxegy41Ey8NDWojS4A9sx5-6-OFQhsG1Kk7HIF2yJShqKlB5PC5JvUSH307ZnuJJG2mHx6iQYlRiif689p7gnitHsxaS3h3m8ph04a-aVZGrEtivisUTHVbvw3VHj6Ruqk46X6EWJAPGP-gICBNlH6VIQlRwu4_aTng"/>
+<div class="flex-1">
+<h4 class="text-lg font-bold text-black dark:text-white">
+                      Dr. Sophia Clark
+                    </h4>
+<p class="text-sm font-medium text-primary">Pediatrician</p>
+<p class="mt-1 text-xs text-black/60 dark:text-white/60">
+                      8 years experience
+                    </p>
+<div class="mt-2 flex items-center gap-1 text-sm text-black/80 dark:text-white/80">
+<span class="material-symbols-outlined text-yellow-500 !text-base" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="font-bold">4.7</span>
+<span class="text-xs text-black/60 dark:text-white/60">(900+ reviews)</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<p class="text-xs text-black/60 dark:text-white/60">Next available at 5:15 PM</p>
+<button class="w-full bg-primary px-4 py-2 text-sm font-bold text-white rounded-lg">
+                      Book Token
+                    </button>
+<button class="w-full bg-primary/20 dark:bg-primary/30 px-4 py-2 text-sm font-bold text-primary rounded-lg">
+                      View Profile
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 flex justify-center">
+<button class="bg-primary/20 dark:bg-primary/30 text-primary font-bold py-2 px-6 rounded-lg text-sm">
+                   Load More
+                 </button>
+</div>
+</div>
+<aside class="space-y-6 lg:col-span-1">
+<div class="rounded-xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-4">
+<h3 class="mb-4 text-lg font-bold text-black dark:text-white">Filter by Specialty</h3>
+<div class="space-y-2">
+<a class="block rounded-lg px-3 py-2 text-sm font-medium text-black/80 dark:text-white/80 hover:bg-primary/20 dark:hover:bg-primary/30" href="#">Cardiology</a>
+<a class="block rounded-lg px-3 py-2 text-sm font-medium text-black/80 dark:text-white/80 hover:bg-primary/20 dark:hover:bg-primary/30" href="#">Neurology</a>
+<a class="block rounded-lg px-3 py-2 text-sm font-medium text-black/80 dark:text-white/80 hover:bg-primary/20 dark:hover:bg-primary/30" href="#">Pediatrics</a>
+<a class="block rounded-lg px-3 py-2 text-sm font-medium text-black/80 dark:text-white/80 hover:bg-primary/20 dark:hover:bg-primary/30" href="#">Orthopedics</a>
+<a class="block rounded-lg px-3 py-2 text-sm font-medium text-black/80 dark:text-white/80 hover:bg-primary/20 dark:hover:bg-primary/30" href="#">Dermatology</a>
+<a class="block rounded-lg px-3 py-2 text-sm font-medium text-black/80 dark:text-white/80 hover:bg-primary/20 dark:hover:bg-primary/30" href="#">Oncology</a>
+<a class="block text-sm font-bold text-primary mt-2 px-3" href="#">View All</a>
+</div>
+</div>
+<div class="rounded-xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-4">
+<h3 class="mb-4 text-lg font-bold text-black dark:text-white">Filter Options</h3>
+<div class="space-y-4">
+<div>
+<label class="text-sm font-medium text-black/80 dark:text-white/80">Availability</label>
+<select class="form-select mt-1 block w-full rounded-lg border-none bg-black/5 dark:bg-white/10 text-sm text-black dark:text-white focus:ring-2 focus:ring-primary">
+<option>Today</option>
+<option>Tomorrow</option>
+<option>This Weekend</option>
+</select>
+</div>
+<div>
+<label class="text-sm font-medium text-black/80 dark:text-white/80">Gender</label>
+<div class="mt-1 flex gap-2">
+<button class="flex-1 rounded-lg bg-primary/20 dark:bg-primary/30 py-2 text-sm font-medium text-primary">Any</button>
+<button class="flex-1 rounded-lg bg-black/5 dark:bg-white/10 py-2 text-sm font-medium text-black/60 dark:text-white/60">Male</button>
+<button class="flex-1 rounded-lg bg-black/5 dark:bg-white/10 py-2 text-sm font-medium text-black/60 dark:text-white/60">Female</button>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 z-50 border-t border-black/10 dark:border-white/10 bg-background-light dark:bg-background-dark p-4 sm:hidden">
+<button class="w-full bg-primary px-4 py-3 text-base font-bold text-white rounded-lg">
+             Map View
+          </button>
+</div>
+</div>
+
+</body></html>
